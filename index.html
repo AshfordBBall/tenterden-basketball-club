@@ -3,43 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tenterden Youth Basketball Club - Empowering young athletes through teamwork.">
     <title>Tenterden Youth Basketball Club</title>
     <link rel="stylesheet" href="styles/style.css">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
-        <img src="images/logo.png" alt="Club Logo" class="logo">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="programs.html">Programs</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Tenterden Tigers Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <img src="images/hero-image.jpg" alt="Basketball Court">
-        <div class="hero-text">
-            <h1>Join the Tenterden Tigers!</h1>
-            <button>Register Now</button>
+        <div class="hero-content">
+            <h1>Welcome to Tenterden Tigers Basketball</h1>
+            <p>Join our community of young athletes!</p>
+            <a href="programs.html" class="cta-button">View Programs</a>
         </div>
     </section>
 
     <!-- Programs Preview -->
-    <section class="programs">
-        <h2>Our Programs</h2>
-        <div class="program-card">
-            <img src="images/u8-team.jpg" alt="U8 Team">
-            <h3>Under 8s (Fundamentals)</h3>
+    <section class="programs-preview">
+        <h2>Our Age Groups</h2>
+        <div class="program-grid">
+            <div class="program-card">
+                <img src="images/u8-team.jpg" alt="Under 8 Team">
+                <h3>Under 8s (Fundamentals)</h3>
+                <p>Learn basic skills in a fun, supportive environment.</p>
+            </div>
+            <!-- Repeat for U12, U16 -->
         </div>
-        <!-- Repeat for U12, U16 -->
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>Contact: info@tenterdenhoops.co.uk</p>
-        <p>Address: Tenterden Leisure Centre, TN30 6RA</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@tenterdenhoops.co.uk</p>
+                <p>Phone: 01580 123 456</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 Tenterden Youth Basketball Club</p>
     </footer>
 
     <script src="scripts/script.js"></script>
